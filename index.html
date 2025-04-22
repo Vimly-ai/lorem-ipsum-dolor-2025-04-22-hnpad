@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorem ipsum dolor</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="font-sans antialiased bg-white">
@@ -12,17 +21,28 @@
     <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                <a href="https://Vimly-ai.github.io/lorem-ipsum-dolor-2025-04-22-hnpad" class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent transition-transform duration-300 hover:scale-105">
                     Logo
-                </div>
+                </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Benefits</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+                    <a href="#features" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105">Features</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105">Benefits</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105">Contact</a>
                 </div>
-                <button class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transform hover:scale-105 transition duration-300">
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl text-gray-600"></i>
+                </button>
+                <button class="hidden md:block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transform hover:scale-105 transition duration-300">
                     Get Started
                 </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden mt-4 py-4 bg-white rounded-lg shadow-xl absolute top-full left-0 right-0">
+                <a href="#features" class="block px-6 py-2 text-gray-600 hover:bg-gray-50">Features</a>
+                <a href="#benefits" class="block px-6 py-2 text-gray-600 hover:bg-gray-50">Benefits</a>
+                <a href="#about" class="block px-6 py-2 text-gray-600 hover:bg-gray-50">About</a>
+                <a href="#contact" class="block px-6 py-2 text-gray-600 hover:bg-gray-50">Contact</a>
             </div>
         </nav>
     </header>
@@ -32,29 +52,46 @@
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto text-center">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                    Lorem ipsum dolor
+                    Transform Your Business with AI-Powered Solutions
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+                    Harness the power of artificial intelligence to streamline operations, boost productivity, and drive growth. Our cutting-edge platform delivers measurable results with 99.9% uptime reliability.
                 </p>
                 <div class="flex justify-center space-x-4">
                     <a href="#" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full font-medium hover:shadow-xl transform hover:scale-105 transition duration-300">
-                        Get Started Now
+                        Start Free Trial
                     </a>
-                    <a href="#" class="bg-white text-gray-800 px-8 py-4 rounded-full font-medium border border-gray-200 hover:border-purple-600 hover:shadow-lg transform hover:scale-105 transition duration-300">
-                        Learn More
+                    <a href="#features" class="bg-white text-gray-800 px-8 py-4 rounded-full font-medium border border-gray-200 hover:border-purple-600 hover:shadow-lg transform hover:scale-105 transition duration-300">
+                        Explore Features
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">About Us</h2>
+                <div class="space-y-8">
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Founded in 2020 by a team of AI experts and industry veterans, our journey began with a simple mission: to make advanced artificial intelligence accessible to businesses of all sizes. What started as a small startup in Silicon Valley has grown into a global leader in AI solutions, serving over 10,000 customers worldwide.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Our core values of innovation, transparency, and customer success drive everything we do. We believe in creating technology that not only solves complex problems but also empowers organizations to achieve their full potential. Our commitment to ethical AI development and sustainable practices ensures we're building solutions that benefit both businesses and society.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
-    <section class="py-24 bg-white">
+    <section id="features" class="py-24 bg-gradient-to-br from-purple-50 via-white to-pink-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Amazing Features</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Enterprise-Grade Features</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Powerful capabilities designed to transform your business operations and drive exceptional results.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Feature Card 1 -->
@@ -64,8 +101,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Feature 1</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class="text-xl font-bold mb-4">Real-Time Analytics</h3>
+                    <p class="text-gray-600">Advanced data processing delivering instant insights with 99.9% accuracy. Monitor KPIs and make data-driven decisions with confidence.</p>
                 </div>
 
                 <!-- Feature Card 2 -->
@@ -75,8 +112,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Feature 2</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class="text-xl font-bold mb-4">Automated Workflows</h3>
+                    <p class="text-gray-600">Streamline operations with AI-powered automation that reduces manual tasks by 75% and increases productivity by 3x.</p>
                 </div>
 
                 <!-- Feature Card 3 -->
@@ -86,30 +123,30 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Feature 3</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class="text-xl font-bold mb-4">Enterprise Security</h3>
+                    <p class="text-gray-600">Bank-grade encryption and compliance with SOC 2, GDPR, and HIPAA standards. Your data is protected by military-grade security protocols.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Benefits Section -->
-    <section class="py-24 bg-gradient-to-br from-purple-50 via-white to-pink-50">
+    <section id="benefits" class="py-24 bg-white">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Key Benefits</h2>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Transformative Benefits</h2>
+                    <p class="text-gray-600">Experience measurable improvements across your entire organization.</p>
                 </div>
                 <div class="space-y-12">
                     <div class="flex flex-col md:flex-row items-center gap-8">
                         <div class="flex-1">
-                            <h3 class="text-2xl font-bold mb-4">Benefit 1</h3>
-                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="text-2xl font-bold mb-4">Increased Efficiency</h3>
+                            <p class="text-gray-600">Our AI solutions reduce processing time by 85% and cut operational costs by 40%. Achieve more with less effort through intelligent automation and optimization.</p>
                         </div>
                         <div class="w-full md:w-1/2">
-                            <div class="bg-white p-6 rounded-2xl shadow-lg">
-                                <img src="https://via.placeholder.com/400x300" alt="Benefit 1" class="rounded-lg w-full">
+                            <div class="bg-white p-6 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Efficiency Analytics" class="rounded-lg w-full">
                             </div>
                         </div>
                     </div>
@@ -118,15 +155,115 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-gradient-to-br from-purple-50 via-white to-pink-50">
         <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-yellow-400">★★★★★</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Implementing this solution increased our team's productivity by 300% within the first month. The AI-powered analytics have transformed how we make decisions."</p>
+                    <div class="font-medium">
+                        <p class="text-gray-900">Sarah Johnson</p>
+                        <p class="text-gray-500">CTO, TechCorp</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-yellow-400">★★★★★</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The automated workflows have eliminated countless hours of manual work. Our ROI was evident within weeks."</p>
+                    <div class="font-medium">
+                        <p class="text-gray-900">Michael Chen</p>
+                        <p class="text-gray-500">Operations Director, GlobalTech</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-yellow-400">★★★★★</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The enterprise-grade security features gave us the confidence to scale our operations globally. Outstanding support team!"</p>
+                    <div class="font-medium">
+                        <p class="text-gray-900">Emily Rodriguez</p>
+                        <p class="text-gray-500">Security Manager, SecureFlow</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-yellow-400">★★★★★</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Best investment we've made in years. The real-time analytics have revolutionized our decision-making process."</p>
+                    <div class="font-medium">
+                        <p class="text-gray-900">David Smith</p>
+                        <p class="text-gray-500">CEO, DataDrive</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-bold mb-4">How does the AI technology work?</h3>
+                    <p class="text-gray-600">Our proprietary AI engine uses advanced machine learning algorithms to analyze data patterns and automate complex processes. It continuously learns and adapts to your specific business needs, improving accuracy over time.</p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-bold mb-4">What security measures are in place?</h3>
+                    <p class="text-gray-600">We implement bank-grade encryption, regular security audits, and comply with major security standards including SOC 2, GDPR, and HIPAA. Your data is protected by multiple layers of security protocols.</p>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-bold mb-4">How long does implementation take?</h3>
+                    <p class="text-gray-600">Typical implementation takes 2-4 weeks, depending on your specific requirements. Our dedicated support team ensures a smooth onboarding process with minimal disruption to your operations.</p>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-bold mb-4">What kind of support is included?</h3>
+                    <p class="text-gray-600">All plans include 24/7 technical support, regular training sessions, and access to our knowledge base. Enterprise clients receive dedicated account managers and priority support.</p>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-bold mb-4">Can I integrate with existing systems?</h3>
+                    <p class="text-gray-600">Yes, our platform offers robust API integration capabilities with most major business systems and custom solutions. We provide full documentation and integration support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-gradient-to-r from-purple-600 to-pink-600 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="container mx-auto px-6 relative">
             <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Get Started?</h2>
-                <p class="text-xl mb-12 opacity-90">Join thousands of satisfied customers today.</p>
-                <a href="#" class="bg-white text-gray-900 px-8 py-4 rounded-full font-medium hover:shadow-xl transform hover:scale-105 transition duration-300 inline-block">
-                    Get Started Now
-                </a>
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Business?</h2>
+                <p class="text-xl mb-12 opacity-90">Join over 10,000 companies already experiencing the power of AI-driven solutions.</p>
+                <div class="space-x-4">
+                    <a href="#" class="bg-white text-gray-900 px-8 py-4 rounded-full font-medium hover:shadow-xl transform hover:scale-105 transition duration-300 inline-block">
+                        Start Free Trial
+                    </a>
+                    <a href="#" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-medium hover:bg-white hover:text-gray-900 transform hover:scale-105 transition duration-300 inline-block">
+                        Schedule Demo
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -136,24 +273,25 @@
         <div class="container mx-auto px-6 py-12">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="col-span-1 md:col-span-2">
-                    <div class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+                    <a href="https://Vimly-ai.github.io/lorem-ipsum-dolor-2025-04-22-hnpad" class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4 inline-block hover:scale-105 transition duration-300">
                         Logo
-                    </div>
-                    <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </a>
+                    <p class="text-gray-600 mb-4">Empowering businesses with intelligent solutions for tomorrow's challenges.</p>
                 </div>
                 <div>
                     <h4 class="font-bold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a></li>
+                        <li><a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About</a></li>
+                        <li><a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a></li>
+                        <li><a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a></li>
+                        <li><a href="https://Vimly-ai.github.io/lorem-ipsum-dolor-2025-04-22-hnpad/blog.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-bold mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://Vimly-ai.github.io/lorem-ipsum-dolor-2025-04-22-hnpad/privacy.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://Vimly-ai.github.io/lorem-ipsum-dolor-2025-04-22-hnpad/terms.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
@@ -162,5 +300,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
